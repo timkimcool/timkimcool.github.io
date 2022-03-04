@@ -1,2 +1,2 @@
 # Portfolio Website
-Personal static website/portfolio to showcase my resume information recent projects.
+Static website/portfolio to showcase my resume information and recent projects.
