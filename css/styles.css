@@ -11,12 +11,13 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --bs-blue: #0d6efd;
+  /* Core Bootstrap Colors */
+  --bs-blue: #2563eb;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
   --bs-red: #dc3545;
-  --bs-orange: #bd5d38;
+  --bs-orange: #fd7e14;
   --bs-yellow: #ffc107;
   --bs-green: #198754;
   --bs-teal: #20c997;
@@ -24,55 +25,38 @@
   --bs-white: #fff;
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
-  --bs-gray-100: #f8f9fa;
-  --bs-gray-200: #e9ecef;
-  --bs-gray-300: #dee2e6;
-  --bs-gray-400: #ced4da;
-  --bs-gray-500: #adb5bd;
-  --bs-gray-600: #6c757d;
-  --bs-gray-700: #495057;
-  --bs-gray-800: #343a40;
-  --bs-gray-900: #212529;
-  --bs-primary: #bd5d38; /* bd5d38 TK A8D0E6 NOT SURE WHAT IT UPDATES*/
-  --bs-secondary: #6c757d;
-  --bs-success: #198754;
-  --bs-info: #0dcaf0;
-  --bs-warning: #ffc107;
-  --bs-danger: #dc3545;
-  --bs-light: #f8f9fa;
-  --bs-dark: #212529;
-  --bs-primary-rgb: 86, 111, 156; /* 189, 93, 56 TK Navbar, lastname, dates*/ 
-  --bs-secondary-rgb: 108, 117, 125;
-  --bs-success-rgb: 25, 135, 84;
-  --bs-info-rgb: 13, 202, 240;
-  --bs-warning-rgb: 255, 193, 7;
-  --bs-danger-rgb: 220, 53, 69;
-  --bs-light-rgb: 248, 249, 250;
-  --bs-dark-rgb: 45, 63, 92; /* 33, 37, 41 TK */
-  --bs-white-rgb: 255, 255, 255;
-  --bs-black-rgb: 0, 0, 0;
-  --bs-body-color-rgb: 190, 185, 176;  /* 33, 37, 41 TK Not Sure*/
-  --bs-body-bg-rgb: 33, 37, 41; /* 255, 255, 255 TK Not sure */
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: Muli, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  
+  /* Primary Theme Override */
+  --bs-primary: #2563eb; 
+  --bs-secondary: #64748b;
+  --bs-primary-rgb: 37, 99, 235; 
+  --bs-secondary-rgb: 100, 116, 139;
+  
+  /* Dark Mode Backgrounds */
+  --bs-dark-rgb: 15, 23, 42; 
+  --bs-body-bg-rgb: 15, 23, 42; 
+  --bs-body-color-rgb: 148, 163, 184;  
+  --bs-body-color: #94a3b8; 
+  --bs-body-bg: #0f172a; 
+  
+  /* Typography Configuration */
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --bs-body-font-family: Muli, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
-  --bs-body-line-height: 1.5;
-  --bs-body-color: #beb9b0; /* 212529 TK NOT sure*/
-  --bs-body-bg: #475466; /* fff TK background */
+  --bs-body-line-height: 1.6;
 
-  --tk-text-color: rgb(225, 231, 237); /* #6c757d TK paragraph text color  */
-  --tk-header-text-color: rgb(253, 250, 246); /* #343a40 TK paragraph headers*/ 
-  --tk-hover: 111, 146, 209;
-  --tk-link: 135, 169, 230;
-  --tk-dates: 121, 156, 219;
-  --tk-social-background: #3d4247;
-  --tk-social-hover: rgb(var(--bs-primary-rgb));
-  --tk-button-primary: rgb(var(--bs-primary-rgb));
-  --tk-button-hover: rgb(77, 99, 138);
-
+  /* Custom Tim Kim Variables */
+  --tk-text-color: #cbd5e1; /* Main paragraph text */
+  --tk-header-text-color: #f8fafc; /* Crisp white headers */
+  --tk-link: 59, 130, 246; /* #3b82f6 for standard links */
+  --tk-hover: 96, 165, 250; /* #60a5fa for hovered links */
+  --tk-dates: 148, 163, 184; /* Subdued dates text */
+  --tk-social-background: #1e293b; /* Slate 800 */
+  --tk-social-hover: #2563eb; /* Blue 600 */
+  --tk-button-primary: #2563eb;
+  --tk-button-hover: #1d4ed8;
 }
 
 *,
